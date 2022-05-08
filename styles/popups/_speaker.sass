@@ -1,0 +1,59 @@
+.speaker
+    background-color: #fff
+    padding: 25px 30px
+    max-width: 500px
+    +flex-column(flex-start, center)
+    h3
+        line-height: 130%
+        text-decoration-line: underline
+        margin-top: 16px
+    span 
+        color: $span-grey
+    >p
+        max-width: 300px
+        margin: 16px 0
+        font-size: 14px
+        +regular()
+    &__links
+        +flex(center, center)
+        a
+            border: $grey-border
+            padding: 8px
+            margin-right: 16px
+            margin-bottom: 16px 
+    &__contacts
+        align-self: flex-start
+        margin-bottom: 16px 
+        p
+            +regular()
+        &:last-child
+            margin-bottom: 0
+    &__buttons
+        margin-top: 50px
+        +flex(flex-start, center)
+        button
+            width: 240px
+            height: 45px
+            background: $green 
+            border: none
+            color: #fff
+            margin-right: 34px
+            +flex(center, center)
+            span
+                +regular()
+                color: #fff
+                font-size: 14px
+                margin-right: 8px
+            &.delite
+                background: #FF2525
+    &-overlay
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(193, 201, 208, 0.4)
+    &.in_modal
+        float: right
+        height: 100%
+

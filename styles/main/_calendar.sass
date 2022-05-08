@@ -1,0 +1,121 @@
+.calendar
+    margin-top: 34px 
+    &__head
+        background: #F7F9FB
+        width: 100%
+        +flex(flex-start, center)
+        &-corner
+            width: 50px
+            height: 50px
+        &-days
+            +flex(flex-start, center)
+            width: calc(100% - 50px)
+            &-item
+                width: calc(100% / 7)
+                height: 50px
+                +flex(center, center)
+    &__events
+        width: 100%
+        &-grid
+            display: grid
+            grid-template-columns: 50px repeat(7, 1fr)
+            grid-template-rows: 20px repeat(28, 76px)
+
+.grid-item
+    border-left: $grey-border
+    border-bottom: $grey-border
+    position: relative
+    &-inner
+        position: absolute
+        padding: 10px
+        font-size: 14px
+        +flex-column(space-between, flex-start)
+        p
+            +regular()
+        span
+            +bold()
+        &.yellow
+            background: linear-gradient(180deg, #FFFDCE 0%, #FFFDCE 0.01%, #FBF68D 100%, #ECE896 100%)
+            border: 1px solid #E9E018
+        &.red
+            background: linear-gradient(180deg, #FFECE2 0%, #FBDDCD 100%)
+            border: 1px solid #E8BEA9
+        &.blue
+            background: linear-gradient(180deg, #E2EFFF 0%, #CAE1FF 100%)
+            border: 1px solid #9DC6FF
+        &.green
+            background: linear-gradient(180deg, #E6F8DF 0%, #CCF0BD 100%)
+            border: 1px solid #5BBB35
+        &.purple
+            background: linear-gradient(180deg, #FAEBFF 0%, #EFD9F8 100%)
+            border: 1px solid #D5AFE3
+
+.time
+    position: relative
+    span
+        position: absolute
+        top: -10px
+        left: 10px
+
+.roundedTable1
+    top: 0
+    left: 0
+    right: 0
+    bottom: -100%
+    z-index: 1
+
+.meeting1
+    top: 0
+    left: 0
+    right: 0
+    bottom: -100%
+    z-index: 1
+
+.stream1
+    top: 30%
+    left: 0
+    right: 0
+    bottom: -200%
+    z-index: 1
+
+.conf1
+    top: 0
+    left: 20%
+    right: 0
+    bottom: -100%
+    z-index: 2
+
+.conf2
+    top: 0
+    left: 0
+    right: 0
+    bottom: -200%
+    z-index: 1
+
+.conf3
+    top: 0
+    left: 0
+    right: 0
+    bottom: -200%
+    z-index: 1
+
+.meeting2
+    top: 0
+    left: 0
+    right: 0
+    bottom: -100%
+    z-index: 1
+
+.session1
+    top: 0
+    left: 0
+    right: 0
+    bottom: -100%
+    z-index: 1
+
+
+
+
+  
+
+

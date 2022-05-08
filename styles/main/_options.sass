@@ -1,0 +1,29 @@
+.options
+    +flex(space-between, center)
+    &__item
+        position: relative
+        width: 22%
+        padding: 12px 20px
+        border: $grey-border
+        +flex(space-between, center)
+        &.active
+            img
+                transform: rotate(180deg)
+        &-speakers
+            position: absolute
+            display: none
+            left: -1px
+            right: -1px
+            top: 45px
+            max-height: 170px
+            border: $grey-border
+            background: #fff
+            overflow-y: scroll
+            z-index: 2
+            &-name
+                padding: 8px 20px
+                font-size: 14px
+                line-height: 130%
+                border-bottom: $grey-border
+                
+        

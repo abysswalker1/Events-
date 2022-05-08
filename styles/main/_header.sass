@@ -1,0 +1,35 @@
+.header
+    margin: 50px 0
+    +flex(space-between, center)
+    &__search
+        +flex(flex-start, center)
+        &-frame
+            border: $grey-border
+            padding: 13px 15px
+            border-radius: 8px
+            margin-right: 32px
+            width: 300px
+            background: rgba(247, 249, 251, 1)
+            input
+                padding: 0
+                border: none
+                margin-right: 10px
+                background: inherit
+            img
+               float: right
+               object-fit: contain
+        &-lang
+            border: $grey-border
+            padding: 7px 12px
+            border-radius: 2000px
+            span
+                &.disabled
+                    color: #D4DAE4
+
+    @media screen and (max-width: 1350px)
+        &__search
+            &-frame
+                width: 270px
+                padding: 7px 12px
+
+

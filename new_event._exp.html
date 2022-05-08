@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <link rel="stylesheet" href="./reset.css" />
+    <title>New Event</title>
+</head>
+<body>
+    <div class="popup">
+        <div class="popup__modal">
+            <div class="newEvent">
+                <h3>Назначьте встречу</h3>
+                <div class="eventData">
+                    <div class="eventData__frame">
+                        <p class="eventData__frame-tittle">Тема встречи</p>
+                        <p>Автоматизация бизнес-процессов путем правильной коммуникации в команде</p>
+                    </div>
+                    <div class="eventData__options">
+                        <div class="eventData__frame">
+                            <p class="eventData__frame-tittle">Дата встречи</p>
+                            <input placeholder="Укажите дату"/>
+                        </div>
+                        <div class="eventData__frame">
+                            <p class="eventData__frame-tittle">Время встречи</p>
+                            <span>Укажите время</span>
+                            <img src="./icons/arrow.svg"/>
+                            <div class="eventData__options-time">
+                                <div class="eventData__options-time-bar">
+                                    <span>Начало встречи</span>
+                                    <img src="./icons/arrow.svg"/>
+                                </div>
+                                <div class="eventData__options-time-bar active">
+                                    <span>Окончание встречи</span>
+                                    <img src="./icons/arrow.svg"/>
+                                    <div class="timelist">
+                                        <div class="timelist-item">8:30</div>
+                                        <div class="timelist-item">9:00</div>
+                                        <div class="timelist-item">9:30</div>
+                                        <div class="timelist-item">10:00</div>
+                                        <div class="timelist-item">10:30</div>
+                                        <div class="timelist-item">11:00</div>
+                                        <div class="timelist-item">11:30</div>
+                                        <div class="timelist-item">12:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eventData__frame">
+                            <p class="eventData__frame-tittle">Вид встречи</p>
+                            <span>Выберите из списка</span>
+                            <img src="./icons/arrow.svg"/>
+                            <div class="eventData__options-category">
+                                <div class="eventData__options-category-item">
+                                    <div class="markers__item-color blue"></div>
+                                    <span>Трансляция</span>
+                                </div>
+                                <div class="eventData__options-category-item">
+                                    <div class="markers__item-color green"></div>
+                                    <span>Конференция</span>
+                                </div>
+                                <div class="eventData__options-category-item">
+                                    <div class="markers__item-color red"></div>
+                                    <span>Собрание</span>
+                                </div>
+                                <div class="eventData__options-category-item">
+                                    <div class="markers__item-color purple"></div>
+                                    <span>Пленарное заседание</span>
+                                </div>
+                                <div class="eventData__options-category-item">
+                                    <div class="markers__item-color yellow"></div>
+                                    <span>Круглый стол</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventData__frame">
+                        <p class="eventData__frame-tittle">Вставьте ссылку на встречу</p>
+                        <input class="eventData__frame-input"/>
+                    </div>
+                    <div class="eventData__frame">
+                        <p class="eventData__frame-tittle">Добавить людей из записной книжки</p>
+                        <p>Выберите из списка</p>
+                    </div>
+                    <div class="eventData__names">
+                        <span>Чарыгина А. О.;</span>
+                        <span>Вальхаалов Д. К.;</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button>
+                        Назад
+                    </button>
+                    <button class="accept">
+                        Сохранить
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer in_modal">
+            <div class="footer__container container">
+                <img src="./images/logo.svg" alt="">
+                <a href="#">Политика обработки персональных данных</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

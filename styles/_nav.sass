@@ -1,0 +1,32 @@
+    
+.nav
+    position: fixed
+    top: 56px
+    left: 0
+    bottom: 75px
+    width: 4%
+    background: rgba(247, 249, 251, 1)
+    border: $grey-border
+    border-radius: 0px 15px 15px 0px
+    z-index: 3
+    &__item
+        height: calc(100% / 11)
+        +flex(center, center)
+        &-icon 
+            object-fit: contain
+            max-height: 60%
+        &.active
+            border-left: 5px solid #5BBB35
+        &.marked
+            border-top: $grey-border
+            border-bottom: $grey-border
+        &:last-child
+            border-bottom: none
+.user-circle 
+    width: 90%
+    height: 90%
+    border: 3px solid #FFFFFF
+    border-radius: 2000px
+    +flex(center, center)
+
+                

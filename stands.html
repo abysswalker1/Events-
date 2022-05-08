@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./styles/css/index.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="nav__item">
+                <img alt="" src="./icons/burger.svg" class="nav__item-icon"/>
+            </div>
+            <div class="nav__item marked">
+                <div class="user-circle">
+                    <img alt="" src="./icons/user.svg" class="nav__item-icon"/>
+                </div>
+            </div>
+            <div class="nav__item">
+                <img alt="" src="./icons/home.svg" class="nav__item-icon"/>
+            </div>
+            <div class="nav__item">
+                <img alt="" src="./icons/2-user.svg" class="nav__item-icon"/>
+            </div>
+            <div class="nav__item active">
+                <img alt="" src="./icons/calendar.svg" class="nav__item-icon"/>
+            </div>
+            <div class="nav__item">
+                <img alt="" src="./icons/chats.svg" class="nav__item-icon"/>
+            </div>
+            <div class="nav__item">
+                <img alt="" src="./icons/edit.svg" class="nav__item-icon"/>
+            </div>
+            <div class="nav__item">
+                <img alt="" src="./icons/heart.svg" class="nav__item-icon"/>
+            </div>
+            <div class="nav__item">
+                <img alt="" src="./icons/Notification.svg" class="nav__item-icon"/>
+            </div>
+            <div class="nav__item">
+                <img alt="" src="./icons/Setting.svg" class="nav__item-icon"/>
+            </div>
+            <div class="nav__item marked">
+                <img alt="" src="./icons/back.svg" class="nav__item-icon"/>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h1>Мои события</h1>
+                <div class="header__search">
+                    <div class="header__search-frame">
+                        <input placeholder="Поиск"/>
+                        <img src="./icons/search.svg"/>
+                    </div>
+                    <div class="header__search-lang">
+                        <span>Ру</span>
+                        <span class="disabled">En</span>
+                    </div>  
+                </div>
+            </div>
+            <div class="sections">
+                <div class="sections__item">
+                    Мой календарь
+                </div>
+                <div class="sections__item">
+                    Деловая программа
+                </div>
+                <div class="sections__item">
+                    Мероприятия на стендах
+                </div>
+                <div class="sections__item active">
+                    Добавить событие
+                    <img src="./icons/plus.svg" />
+                </div>
+            </div>
+            <div class="markers">
+                <div class="markers__item">
+                    <div class="markers__item-color blue"></div>
+                    <span>Трансляция</span>
+                </div>
+                <div class="markers__item">
+                    <div class="markers__item-color green"></div>
+                    <span>Конференция</span>
+                </div>
+                <div class="markers__item">
+                    <div class="markers__item-color red"></div>
+                    <span>Собрание</span>
+                </div>
+                <div class="markers__item">
+                    <div class="markers__item-color purple"></div>
+                    <span>Пленарное собрание</span>
+                </div>
+                <div class="markers__item">
+                    <div class="markers__item-color yellow"></div>
+                    <span>круглый стол</span>
+                </div>
+            </div>
+            <div class="options">
+                <div class="options__item">
+                    <span>Период</span>
+                    <img src="./icons/lil_calendar.svg" alt="">
+                </div>
+                <div class="options__item">
+                    <span>Тип события</span>
+                    <img src="./icons/arrow.svg" alt="">
+                </div>
+                <div class="options__item active">
+                    <span>Спикеры</span>
+                    <img src="./icons/arrow.svg" alt="">
+                    <div class="options__item-speakers">
+                        <div class="options__item-speakers-name">Галкин Д. О.</div>
+                        <div class="options__item-speakers-name">Киров М. И.</div>
+                        <div class="options__item-speakers-name">Анова О. М.</div>
+                        <div class="options__item-speakers-name">Малиновская Н. А.</div>
+                        <div class="options__item-speakers-name">Сыромякин М. Д.</div>
+                    </div>
+                </div>
+                <div class="options__item">
+                    <span>Участник</span>
+                    <img src="./icons/arrow.svg" alt="">
+                </div>
+            </div>
+            <div class="program">
+                <!-- юристы правового комитета -->
+                <div class="program__item">
+                    <div class="program__item-head">
+                        <h3>Юристы Правового комитета “Российского союза Туриндустрии” принимают гостей на Территории юридического комфорта</h3>
+                        <div class="program__item-head-buttons">
+                            <img src="./icons/favs.svg"/>
+                            <button>
+                                <span>Добавить в календарь</span>
+                                <img src="./icons/plus_white.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="program__item-content">
+                        <div class="program__item-content-container">
+                            <div class="program__item-content-logo">
+                                <p>лого<br />участника</p>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-row">
+                                    <img src="./icons/lil_calendar.svg"/>
+                                    <span>04.04.2022</span>
+                                </div>
+                                <div class="program__item-content--item-row">
+                                    <img src="./icons/clock.svg"/>
+                                    <span>11:00-12:00</span>
+                                </div>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-marker">
+                                    <div class="markers__item-color red"></div>
+                                    <p>Собрание</p>
+                                </div>
+                            </div>
+                            <div class="program__item-content--item">
+                                <span>Патрушев</br> Дмитрий Николаевич -</span>
+                                <p>юрист</p>
+                                <span>Игорь Пикалов -</span>
+                                <p>генеральный директор ИФ «Террикон»</p>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-stand">
+                                    <p>ООО "ИТ Солюшн"</p>
+                                    <button>Перейти на стэнд</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Презентация -->
+                <div class="program__item">
+                    <div class="program__item-head">
+                        <h3>Презентация нового продукта компании АО «Ситиматик»</h3>
+                        <div class="program__item-head-buttons">
+                            <img src="./icons/favs_empty.svg"/>
+                            <button>
+                                <span>Добавить в календарь</span>
+                                <img src="./icons/plus_white.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="program__item-content">
+                        <div class="program__item-content-container">
+                            <div class="program__item-content-logo">
+                                <p>лого<br />участника</p>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-row">
+                                    <img src="./icons/lil_calendar.svg"/>
+                                    <span>05.02.2022</span>
+                                </div>
+                                <div class="program__item-content--item-row">
+                                    <img src="./icons/clock.svg"/>
+                                    <span>14:00-16:00</span>
+                                </div>
+                                <div class="program__item-content--item-row">
+                                    <img src="./icons/location.svg"/>
+                                    <p>Большой</br> конференц-зал</p>
+                                </div>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-marker">
+                                    <div class="markers__item-color green"></div>
+                                    <p>Конференция</p>
+                                </div>
+                            </div>
+                            <div class="program__item-content--item">
+                                <p>Представители компании — участника</p>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-stand">
+                                    <p>АО «Ситиматик»</p>
+                                    <button>Перейти на стэнд</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Меры гос поддержки -->
+                <div class="program__item">
+                    <div class="program__item-head">
+                        <h3>Меры государственной поддержки предприятий текстильной и легкой промышленности ...</h3>
+                        <div class="program__item-head-buttons">
+                            <img src="./icons/favs_empty.svg"/>
+                            <button>
+                                <span>Добавить в календарь</span>
+                                <img src="./icons/plus_white.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="program__item-content">
+                        <div class="program__item-content-container">
+                            <div class="program__item-content-logo">
+                                <p>лого<br />участника</p>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-row">
+                                    <img src="./icons/lil_calendar.svg"/>
+                                    <span>04.04.2022</span>
+                                </div>
+                                <div class="program__item-content--item-row">
+                                    <img src="./icons/clock.svg"/>
+                                    <span>11:00-12:30</span>
+                                </div>
+                                <div class="program__item-content--item-row">
+                                    <img src="./icons/location.svg"/>
+                                    <p>Павильон «Квадрат» стенд № 57</p>
+                                </div>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-marker">
+                                    <div class="markers__item-color yellow"></div>
+                                    <p>Круглый стол</p>
+                                </div>
+                            </div>
+                            <div class="program__item-content--item">
+                                <span>Анна Петрушина -</span>
+                                <p>руководитель товарных групп Обувь/Легпром/Мех НСЦМ «Честный знак»</p>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-stand">
+                                    <p>ФГБОУ ВО</br>«РГУ им. А.Н. Косыгина»</p>
+                                    <button>Перейти на стэнд</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Комплексная система -->
+                <div class="program__item">
+                    <div class="program__item-head">
+                        <h3>«Комплексная система обращения с отходами</h3>
+                        <div class="program__item-head-buttons">
+                            <img src="./icons/favs_empty.svg"/>
+                            <button>
+                                <span>Добавить в календарь</span>
+                                <img src="./icons/plus_white.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="program__item-content">
+                        <div class="program__item-content-container">
+                            <div class="program__item-content-logo">
+                                <p>лого<br />участника</p>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-row">
+                                    <img src="./icons/lil_calendar.svg"/>
+                                    <span>05.02.2022</span>
+                                </div>
+                                <div class="program__item-content--item-row">
+                                    <img src="./icons/clock.svg"/>
+                                    <span>14:00-16:00</span>
+                                </div>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-marker">
+                                    <div class="markers__item-color purple"></div>
+                                    <p>Презентация</p>
+                                </div>
+                            </div>
+                            <div class="program__item-content--item">
+                                <span>Павел Бесшапов -</span>
+                                <p>советник генерального директора ППК «РЭО»</p>
+                                <span>Игорь Пикалов -</span>
+                                <p>генеральный директор ИФ «Террикон»</p>
+                            </div>
+                            <div class="program__item-content--item">
+                                <div class="program__item-content--item-stand">
+                                    <p>ООО "ИТ Солюшн"</p>
+                                    <button>Перейти на стэнд</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__container container">
+                <img src="./images/logo.svg" alt="">
+                <a href="#">Политика обработки персональных данных</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

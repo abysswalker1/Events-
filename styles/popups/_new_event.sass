@@ -1,0 +1,117 @@
+.newEvent
+    position: relative
+    width: 1000px
+    padding-top: 20px
+    +flex-column(flex-start, center)
+    h3
+        +bold()
+        font-size: 18px
+        line-height: 130%
+        
+    .eventData
+        width: 760px
+        +regular()
+        >div
+            max-width: 100%
+        &__frame
+            position: relative
+            padding: 15px 20px
+            border: $grey-border
+            margin: 26px 0
+            font-size: 14px
+            box-shadow: 0px 4px 9px rgba(195, 195, 195, 0.25)
+            &-tittle
+                position: absolute
+                top: -14px
+                left: 15px
+                padding: 5px
+                background: #fff
+                font-size: 12px
+                color: #7C818A
+            &-input
+                width: 60%
+        &__options
+            width: 100%
+            +flex(space-between, center)
+            >div
+                width: 30%
+                margin: 0
+                font-size: 14px
+                color: #7C818A
+                padding: 11px 20px
+            img
+                float: right
+            span
+                vertical-align: middle
+            input
+                height: 24px
+            &-category
+                position: absolute
+                top: 45px
+                left: -1px
+                right: -1px
+                z-index: 2
+                border: $grey-border
+                &-item
+                    color: #1A1A1A
+                    padding: 10px 8px 
+                    background-color: #fff
+                    border-top: $grey-border
+                    box-shadow: 0px 4px 9px rgba(195, 195, 195, 0.25)
+                    +flex(flex-start, center)
+                    &:first-child
+                        border-top: none
+            &-time
+                position: absolute
+                top: 45px
+                left: -1px
+                right: -1px
+                z-index: 2
+                +flex-column(flex-start, stretch)
+                &-bar
+                    position: relative
+                    border: $grey-border
+                    background: #F7F9FB
+                    padding: 8px 20px
+                    span
+                        color: #000
+                    img
+                        transform: rotate(180deg)
+                    &:last-child
+                        border-top: none
+                    &.active 
+                        img
+                            transform: rotate(0)
+        &__names
+            align-self: flex-start
+            margin: 0 10px 
+            color: #7C818A
+    .buttons
+        button
+            border: 1px solid $green
+            background: none
+            padding: 12px 90px
+            margin: 40px 0 
+            &.accept
+                color: #fff
+                background: $green
+            &:first-child
+                margin-right: 80px
+
+.timelist
+    position: absolute
+    top: 40px
+    left: -1px
+    right: -1px
+    height: 200px
+    border: $grey-border
+    z-index: 3
+    overflow-y: scroll
+    &-item
+        padding: 10px 13px
+        border-top: $grey-border
+        background: #fff
+        color: #1A1A1A
+        &:last-child
+            border-bottom: none
+

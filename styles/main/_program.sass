@@ -1,0 +1,92 @@
+.program
+    width: 100%
+    margin-top: 32px
+    &__item
+        margin-top: 24px
+        &-head
+            padding: 8px 0
+            +flex(space-between, center)
+            &-buttons
+                +flex(flex-start,center)
+                button
+                    width: 240px
+                    height: 45px
+                    background: $green 
+                    border: none
+                    margin-left: 34px
+                    +flex(center, center)
+                span
+                    color: #fff
+                    font-size: 14px
+                    margin-right: 8px
+                &.delite
+                    background: #FF2525
+        &-content
+            background: #F7F9FB
+            border: $grey-border
+            padding: 32px 24px
+            &-container
+                position: relative
+                +flex(flex-end, center)
+            &-logo
+                position: absolute
+                left: 0
+                width: 170px
+                height: 170px
+                background: #F7F9FB
+                border: 1px solid #BDBDBD
+                border-radius: 50%
+                margin-right: 24px
+                text-align: center
+                font-size: 14px
+                line-height: 130%
+                color: #4F4F4F
+                +flex(center, center)
+            &-image
+                position: absolute
+                left: -17px
+                top: -26px
+                bottom: -40px
+                height: 130%
+            &--item
+                height: 154px
+                padding: 0 23px
+                border-left: $grey-border
+                width: 240px
+                +flex-column(center, flex-start)
+                &:nth-child(3)
+                    width: 180px
+                span
+                    +bold()
+                &-row
+                    margin-bottom: 10px
+                    +flex(space-between, flex-start)
+                    span
+                        +bold()
+                    img
+                        margin-right: 16px
+                    p
+                        width: 120px
+                        font-size: 16px
+                        +light()
+                &-marker
+                    +flex(space-between,center)
+                    .markers__item-color
+                        align-self: flex-start
+                        margin-top: 5px
+                    p
+                        max-width: 100px
+                &-stand
+                    margin-bottom: 16px
+                    button
+                        width: 230px
+                        height: 45px
+                        background-color: #fff
+                        border: $grey-border
+                        flex(center, center)
+                &:last-child
+                    margin-bottom: 0
+
+
+                
+            

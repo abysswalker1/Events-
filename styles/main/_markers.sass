@@ -1,0 +1,33 @@
+.markers
+    margin: 32px 0
+    +flex(flex-start, center)
+    &__item
+        margin-right: 32px
+        +flex(flex-start, center)
+        &-color
+            width: 13px
+            height: 13px
+            border-radius: 50%
+            margin-right: 8px
+            &.blue
+                background: #E2EFFF
+                border: 1px solid #9DC6FF
+            &.green
+                background: #E6F8DF
+                border: 1px solid #5BBB35
+            &.red
+                background: linear-gradient(180deg, #FFECE2 0%, #FBDDCD 100%)
+                border: 1px solid #E8BEA9
+            &.purple
+                background: linear-gradient(180deg, #FAEBFF 0%, #EFD9F8 100%)
+                border: 1px solid #D5AFE3
+            &.yellow
+                background: linear-gradient(180deg, #FFFDCE 0%, #ECE896 100%)
+                border: 1px solid #E9E018
+    @media screen and (max-width: 1350px)
+        &__item
+            &-color
+                width: 11px
+                height: 11px
+            span
+                font-size: 11px
